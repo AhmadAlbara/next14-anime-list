@@ -9,11 +9,11 @@ Before you install and run this project, make sure you have the following softwa
 Follow these steps to install and run the project locally:
 1. Clone this repository to your local machine:
 ```
-git clone https://github.com/username/repository-name.git
+git clone https://github.com/AhmadAlbara/nextjs-template-project.git
 ```
 2. Navigate to the project directory:
 ```
-cd repository-name
+cd nextjs-template-project
 ```
 3. Install project dependencies using npm or yarn:
 ```
