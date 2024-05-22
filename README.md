@@ -3,7 +3,7 @@ This template is a web application built using Next.js, a React framework for mo
 
 ## Requirements
 Before you install and run this project, make sure you have the following software installed on your system:
-* Node.js version 14.x or higher
+* Node.js version 18.x or higher
 * npm or yarn
 ## Installation
 Follow these steps to install and run the project locally:
