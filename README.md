@@ -1,5 +1,5 @@
 ## Description
-This template is a web application built using Next.js, a React framework for modern web applications.
+This Website make with NextJs
 
 ## Requirements
 Before you install and run this project, make sure you have the following software installed on your system:
@@ -9,11 +9,11 @@ Before you install and run this project, make sure you have the following softwa
 Follow these steps to install and run the project locally:
 1. Clone this repository to your local machine:
 ```
-git clone https://github.com/AhmadAlbara/nextjs-template-project.git
+git clone (https://github.com/AhmadAlbara/nextjs14-kyoto.net.git)
 ```
 2. Navigate to the project directory:
 ```
-cd nextjs-template-project
+cd nextjs14-kyoto.net
 ```
 3. Install project dependencies using npm or yarn:
 ```
