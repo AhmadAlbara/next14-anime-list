@@ -1,4 +1,5 @@
 import { fetchDataAnime } from "@/libs/api-libs";
+import Image from "next/image";
 import Link from "next/link";
 import { FaRegCirclePlay } from "react-icons/fa6";
 
@@ -8,11 +9,16 @@ const Page = async ({ params: { id } }) => {
   return (
     <div className="flex flex-wrap items-start justify-center">
       <div className="w-full p-2 md:w-1/2 lg:w-[20%]">
-        <img
-          src={api.data.images.jpg.large_image_url}
-          alt={api.data.title}
-          className="mx-auto rounded-lg h-[350px]"
-        />
+        <div className="w-[200px] h-[300px]  mx-auto relative">
+          <Image
+            src={api.data.images.jpg.large_image_url}
+            objectFit="cover"
+            priority
+            layout="fill"
+            alt={api.data.title}
+            className="rounded-lg "
+          />
+        </div>
       </div>
       <div className="w-full p-2 md:w-1/2 lg:w-[50%] mt-2">
         <h2 className="mb-4 text-2xl font-bold md:text-4xl">

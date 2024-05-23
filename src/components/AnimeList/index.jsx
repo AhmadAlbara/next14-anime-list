@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -10,8 +11,11 @@ const index = ({ api }) => {
             href={`/anime/${anime.mal_id}`}
             className="relative block w-full h-full overflow-hidden group"
           >
-            <img
-              src={anime.images.jpg.image_url}
+            <Image
+              src={anime.images.jpg.large_image_url}
+              objectFit="cover"
+              priority
+              layout="fill"
               alt={anime.title}
               className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
             />
