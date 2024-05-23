@@ -1,4 +1,3 @@
-"use client";
 import { fetchDataAnime } from "@/libs/api-libs";
 import Link from "next/link";
 import { FaRegCirclePlay } from "react-icons/fa6";
