@@ -6,7 +6,7 @@ import Pagination from "@/components/Pagination";
 import { useEffect, useState } from "react";
 import Loading from "@/app/loading";
 
-const page = ({ params }) => {
+const Page = ({ params }) => {
   const { keyword } = params;
   const decodedKeyword = decodeURIComponent(keyword);
   const [page, setPage] = useState(1);
@@ -43,4 +43,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Page;
