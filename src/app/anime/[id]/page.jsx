@@ -2,7 +2,7 @@ import { fetchDataAnime } from "@/libs/api-libs";
 import Link from "next/link";
 import { FaRegCirclePlay } from "react-icons/fa6";
 
-const page = async ({ params: { id } }) => {
+const Page = async ({ params: { id } }) => {
   const api = await fetchDataAnime(`anime/${id}`);
 
   return (
@@ -67,4 +67,4 @@ const page = async ({ params: { id } }) => {
   );
 };
 
-export default page;
+export default Page;
