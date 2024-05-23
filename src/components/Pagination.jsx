@@ -21,13 +21,14 @@ const Pagination = ({ page, lastPage, setPage }) => {
 
   const renderPageButtons = () => {
     let pageButtons = [];
-    let startPage = Math.max(1, page - 2);
-    let endPage = Math.min(lastPage, page + 2);
+    let startPage = Math.max(1, page - 1);
+    let endPage = Math.min(lastPage, page + 1);
 
-    if (page <= 3) {
-      endPage = Math.min(lastPage, 5);
-    } else if (page >= lastPage - 2) {
-      startPage = Math.max(1, lastPage - 4);
+    if (startPage === 1) {
+      endPage = Math.min(3, lastPage);
+    }
+    if (endPage === lastPage) {
+      startPage = Math.max(1, lastPage - 2);
     }
 
     for (let i = startPage; i <= endPage; i++) {
