@@ -38,10 +38,6 @@ Here are some useful npm scripts for development:
 * npm run build or yarn build: Builds the application for production.
 * npm start or yarn start: Runs the built application.
 * npm run lint or yarn lint: Runs the linter to check for code errors.
-## Project Structure
-Here is the basic structure of the project:
-
-![Screenshot 2024-05-22 115526](https://github.com/AhmadAlbara/nextjs-template-project/assets/113780404/a9bb6edc-4391-42de-8ba7-4d51a3f22483)
 ## Contributing
 We welcome contributions from everyone. If you want to contribute, please create a pull request or open an issue on GitHub.
 ## License
