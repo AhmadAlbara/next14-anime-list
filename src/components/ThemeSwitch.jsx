@@ -16,10 +16,10 @@ const ThemeSwitch = () => {
     return <Loading />;
   }
   if (resolvedTheme === "dark") {
-    return <FiSun onClick={() => setTheme("light")} />;
+    return <FiSun onClick={() => setTheme("light")}  className="text-xl"/>;
   }
   if (resolvedTheme === "light") {
-    return <FiMoon onClick={() => setTheme("dark")} />;
+    return <FiMoon onClick={() => setTheme("dark")}  className="text-xl"/>;
   }
 };
 

@@ -9,8 +9,8 @@ import { Providers } from "./providers";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Templates-Project",
-  description: "Author | Ahmad Albara",
+  title: "Kyoto.Net | Anime List",
+  description: "This Website For Anime List",
 };
 export const viewport = {
   width: "device-width",
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${montserrat.className} dark:text-color-primary text-color-secondary`}
+        className={`${montserrat.className} dark:text-color-primary text-color-secondary dark:bg-color-secondary bg-color-primary`}
       >
         <Providers>
           <Navbar />

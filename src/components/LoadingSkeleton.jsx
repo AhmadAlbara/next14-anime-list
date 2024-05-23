@@ -1,7 +1,7 @@
 const LoadingSkeleton = () => {
   return (
-    <div class="loader text-color-secondary dark:text-color-primary "></div>
-  )
-}
+    <div className="loader text-color-secondary dark:text-color-primary "></div>
+  );
+};
 
-export default LoadingSkeleton
+export default LoadingSkeleton;
