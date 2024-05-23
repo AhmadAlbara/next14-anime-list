@@ -9,7 +9,7 @@ Before you install and run this project, make sure you have the following softwa
 Follow these steps to install and run the project locally:
 1. Clone this repository to your local machine:
 ```
-git clone (https://github.com/AhmadAlbara/nextjs14-kyoto.net.git)
+git clone https://github.com/AhmadAlbara/nextjs14-kyoto.net.git
 ```
 2. Navigate to the project directory:
 ```
