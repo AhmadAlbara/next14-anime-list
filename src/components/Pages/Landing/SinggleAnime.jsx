@@ -9,7 +9,7 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 const SinggleAnime = async () => {
   let api = await fetchDataAnime("top/anime", "filter=bypopularity&limit=10");
   const data = shuffleArray(api.data, 1);
-  console.log(data);
+
   return (
     <>
       {data.data.map((anime) => (
