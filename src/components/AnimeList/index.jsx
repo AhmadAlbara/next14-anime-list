@@ -13,15 +13,15 @@ const index = ({ api }) => {
           >
             <Image
               src={anime.images.jpg.large_image_url}
-              objectFit="cover"
               priority
-              layout="fill"
+              fill
+              sizes="20"
               alt={anime.title}
               className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
             />
 
             <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 group-hover:opacity-100">
-              <span className="text-lg font-bold text-center text-white">
+              <span className="px-3 text-xs font-bold text-center text-white md:text-lg">
                 {anime.title}
               </span>
             </div>

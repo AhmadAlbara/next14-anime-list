@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <header className="sticky z-10 -top-1 bg-color-primary/75 dark:bg-color-secondary/75 backdrop-blur-xl">
-      <nav className="container flex items-center justify-between px-4 py-2 mx-auto">
+      <nav className="container flex items-center justify-between px-4 py-4 mx-auto md:py-2">
         <div className="flex items-center space-x-4">
           <div className="text-2xl font-bold">
             <Link href="/">
@@ -26,8 +26,8 @@ const Navbar = () => {
           </div>
           <div className="hidden space-x-4 md:flex">
             <NavLink href={"/"} gradient={"G"} text={"enre"} />
-            <NavLink href={"/"} gradient={"M"} text={"ovies"} />
-            <NavLink href={"/"} gradient={"N"} text={"ews"} />
+            <NavLink href={"/movies"} gradient={"M"} text={"ovies"} />
+            <NavLink href={"/upcoming"} gradient={"N"} text={"ews"} />
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -75,8 +75,8 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-center">
           <NavLink href={"/"} gradient={"G"} text={"enre"} />
-          <NavLink href={"/"} gradient={"M"} text={"ovies"} />
-          <NavLink href={"/"} gradient={"N"} text={"ews"} />
+          <NavLink href={"/movies"} gradient={"M"} text={"ovies"} />
+          <NavLink href={"/upcoming"} gradient={"N"} text={"ews"} />
         </div>
         <div className="flex items-center justify-center ">
           <Link

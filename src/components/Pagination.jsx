@@ -36,7 +36,7 @@ const Pagination = ({ page, lastPage, setPage }) => {
         <button
           key={i}
           onClick={() => setPage(i)}
-          className={`relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase transition-all ${
+          className={`relative h-10 max-h-[40px] w-10 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase transition-all my-10 ${
             page === i
               ? "bg-color-secondary text-color-primary dark:bg-color-primary  dark:text-color-secondary shadow-md shadow-color-secondary/10 dark:shadow-color-primary/10 hover:shadow-lg hover:shadow-color-secondary/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
               : "text-color-secondary hover:bg-color-secondary/10 active:bg-color-secondary/20 dark:text-color-primary dark:hover:bg-color-primary/10 dark:active:bg-color-primary/20"

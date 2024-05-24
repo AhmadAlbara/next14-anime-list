@@ -1,23 +1,27 @@
 "use client";
+
 import TextTitle from "@/components/TextTitle";
 import { fetchDataAnime } from "@/libs/api-libs";
 import AnimeList from "@/components/AnimeList";
-import Pagination from "@/components/Pagination";
 import { useEffect, useState } from "react";
-import Loading from "@/app/loading";
-const SearchPage = ({ keyword }) => {
+import Pagination from "@/components/Pagination";
+import Loading from "../loading";
+
+const Page = () => {
   const [page, setPage] = useState(1);
   const [dataAnime, setDataAnime] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+
   const fetchData = async () => {
     setIsLoading(true);
     const api = await fetchDataAnime(
-      "anime",
-      `q=${keyword}&page=${page}&limit=24`
+      "top/anime",
+      `filter=upcoming&page=${page}&limit=24`
     );
     setDataAnime(api);
     setIsLoading(false);
   };
+
   useEffect(() => {
     fetchData();
   }, [page]);
@@ -25,22 +29,24 @@ const SearchPage = ({ keyword }) => {
   return (
     <div>
       {isLoading ? (
-        <Loading />
+        <Loading /> // komponen Loading ditampilkan saat data sedang diambil
       ) : (
         <>
-          <TextTitle text={`Search Anime ${keyword}`} />
+          <TextTitle text={"All Upcoming anime"} />
 
           <AnimeList api={dataAnime} />
 
-          <Pagination
-            page={page}
-            lastPage={dataAnime.pagination?.last_visible_page}
-            setPage={setPage}
-          />
+          {dataAnime.pagination && (
+            <Pagination
+              page={page}
+              lastPage={dataAnime.pagination?.last_visible_page}
+              setPage={setPage}
+            />
+          )}
         </>
       )}
     </div>
   );
 };
 
-export default SearchPage;
+export default Page;

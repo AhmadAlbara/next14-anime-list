@@ -16,7 +16,7 @@ const Page = () => {
     setIsLoading(true);
     const api = await fetchDataAnime(
       "top/anime",
-      `filter=favorite&page=${page}`
+      `filter=favorite&page=${page}&limit=24`
     );
     setDataAnime(api);
     setIsLoading(false);
@@ -32,7 +32,7 @@ const Page = () => {
         <Loading /> // komponen Loading ditampilkan saat data sedang diambil
       ) : (
         <>
-          <TextTitle text={"All Popular anime"} href={"/"} />
+          <TextTitle text={"All Popular anime"} />
 
           <AnimeList api={dataAnime} />
 
