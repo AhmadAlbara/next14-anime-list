@@ -18,7 +18,7 @@ const SinggleAnime = () => {
 
   return (
     <div className="flex flex-col w-full gap-10 py-4 my-10 md:flex-row">
-      <div className="w-full md:w-[60%] relative md:h-[500px]">
+      <div className="w-full md:w-[60%] relative h-[250px] md:h-[500px]">
         <Image
           src={anime.image}
           priority
