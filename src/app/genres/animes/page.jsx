@@ -34,8 +34,7 @@ const Page = ({ searchParams: { genreId, genreName } }) => {
         <Loading />
       ) : (
         <>
-          <TextTitle text={`All Popular Anime in genre ${genreName}`} />{" "}
-          <AnimeList api={dataAnime} />
+          <TextTitle text={genreName} /> <AnimeList api={dataAnime} />
           {dataAnime.pagination && (
             <Pagination
               page={page}
