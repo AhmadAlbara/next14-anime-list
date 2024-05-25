@@ -15,7 +15,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="flex mb-4 justify-evenly md:mb-0">
-            <NavLink href={"/"} gradient={"G"} text={"enre"} />
+            <NavLink href={"/genres"} gradient={"G"} text={"enre"} />
             <NavLink href={"/movies"} gradient={"M"} text={"ovies"} />
             <NavLink href={"/upcoming"} gradient={"N"} text={"ews"} />
           </div>

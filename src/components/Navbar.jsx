@@ -6,7 +6,6 @@ import Link from "next/link";
 import TextGradient from "./TextGradient";
 import InputSearch from "./InputSearch";
 import NavLink from "./NavLink";
-import { FaCrown } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,23 +24,13 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden space-x-4 md:flex">
-            <NavLink href={"/"} gradient={"G"} text={"enre"} />
+            <NavLink href={"/genres"} gradient={"G"} text={"enre"} />
             <NavLink href={"/movies"} gradient={"M"} text={"ovies"} />
             <NavLink href={"/upcoming"} gradient={"N"} text={"ews"} />
           </div>
         </div>
         <div className="flex items-center space-x-4">
           <ThemeSwitch />
-          <Link
-            href="/"
-            className="relative items-center hidden space-x-1 font-bold transition-all duration-100 ease-in-out md:flex group hover:scale-105"
-          >
-            <FaCrown className="text-2xl text-color-quaternary" />
-            <h1 className="inline-block text-transparent bg-gradient-to-r to-color-quaternary from-color-quinary bg-clip-text">
-              Premium
-            </h1>
-            <span className="absolute -bottom-2 left-0 w-0 transition-all h-0.5  bg-gradient-to-r to-color-quaternary from-color-quinary  group-hover:w-full"></span>
-          </Link>
           <div className="hidden md:block">
             <InputSearch placeholder={"Search anime ..."} />
           </div>
@@ -74,21 +63,9 @@ const Navbar = () => {
         } md:hidden py-4 flex-col space-y-5`}
       >
         <div className="flex items-center justify-center">
-          <NavLink href={"/"} gradient={"G"} text={"enre"} />
+          <NavLink href={"/genres"} gradient={"G"} text={"enre"} />
           <NavLink href={"/movies"} gradient={"M"} text={"ovies"} />
           <NavLink href={"/upcoming"} gradient={"N"} text={"ews"} />
-        </div>
-        <div className="flex items-center justify-center ">
-          <Link
-            href="/"
-            className="relative flex items-center space-x-1 font-bold transition-all duration-100 ease-in-out md:flex group hover:scale-105"
-          >
-            <FaCrown className="text-2xl text-color-quaternary" />
-            <h1 className="inline-block text-transparent bg-gradient-to-r to-color-quaternary from-color-quinary bg-clip-text">
-              Premium
-            </h1>
-            <span className="absolute -bottom-2 left-0 w-0 transition-all h-0.5  bg-gradient-to-r to-color-quaternary from-color-quinary  group-hover:w-full"></span>
-          </Link>
         </div>
         <div className="flex items-center justify-center ">
           <InputSearch placeholder={"Search anime ..."} />
