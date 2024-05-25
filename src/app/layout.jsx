@@ -5,6 +5,8 @@ import Loading from "./loading";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { Providers } from "./providers";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -30,6 +32,8 @@ export default function RootLayout({ children }) {
           <Suspense fallback={<Loading />}>
             <main className="w-full px-2 md:max-w-7xl md:mx-auto">
               {children}
+              <Analytics />
+              <SpeedInsights />
             </main>
           </Suspense>
           <Footer />
