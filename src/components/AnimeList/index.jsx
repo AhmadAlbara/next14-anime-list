@@ -15,6 +15,7 @@ const index = ({ api }) => {
               src={anime.images.jpg.large_image_url}
               priority
               fill
+              unoptimized={true}
               sizes="20"
               alt={anime.title}
               className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
